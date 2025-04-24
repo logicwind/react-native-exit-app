@@ -1,9 +1,9 @@
 package com.exitapp
 
+import android.app.Activity
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
-import com.facebook.react.bridge.Promise
 
 class ExitAppModule(reactContext: ReactApplicationContext) :
   ReactContextBaseJavaModule(reactContext) {
@@ -12,11 +12,11 @@ class ExitAppModule(reactContext: ReactApplicationContext) :
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
   @ReactMethod
-  fun multiply(a: Double, b: Double, promise: Promise) {
-    promise.resolve(a * b)
+  fun exitApp() {
+    val activity: Activity? = currentActivity
+    activity?.finishAffinity()
+    Runtime.getRuntime().exit(0)
   }
 
   companion object {
