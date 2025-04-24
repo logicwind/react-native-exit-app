@@ -1,17 +1,10 @@
-import { multiply } from '@logicwind/react-native-exit-app';
-import { Text, View, StyleSheet } from 'react-native';
-import { useState, useEffect } from 'react';
+import { Button, StyleSheet, View } from 'react-native';
+import { exitApp } from '@logicwind/react-native-exit-app';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
-
-  useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button title="Exit App" onPress={() => exitApp()} />
     </View>
   );
 }
