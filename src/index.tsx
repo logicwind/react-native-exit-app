@@ -17,6 +17,6 @@ const ExitApp = NativeModules.ExitApp
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return ExitApp.multiply(a, b);
-}
+export const exitApp = (): void => {
+  return ExitApp.exitApp();
+};
