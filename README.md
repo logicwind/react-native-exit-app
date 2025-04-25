@@ -33,7 +33,7 @@ No additional setup is required.
 Import and use the `exitApp` function to get the status bar height.
 
 ```tsx md title="App.tsx"
-import { exitApp } from 'react-native-exit-app';
+import { exitApp } from '@logicwind/react-native-exit-app';
 
 <Button title="Exit App" onPress={() => exitApp()} />;
 ```
