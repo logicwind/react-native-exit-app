@@ -14,17 +14,17 @@
     "react-native": "0.78.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.3",
-    "@babel/runtime": "^7.25.0",
+    "@babel/core": "7.25.2",
+    "@babel/preset-env": "7.25.3",
+    "@babel/runtime": "7.25.0",
     "@react-native-community/cli": "15.0.1",
     "@react-native-community/cli-platform-android": "15.0.1",
     "@react-native-community/cli-platform-ios": "15.0.1",
     "@react-native/babel-preset": "0.78.2",
     "@react-native/metro-config": "0.78.2",
     "@react-native/typescript-config": "0.78.2",
-    "@types/react": "^19.0.0",
-    "react-native-builder-bob": "^0.40.5"
+    "@types/react": "19.0.0",
+    "react-native-builder-bob": "0.40.5"
   },
   "engines": {
     "node": ">=18"
