@@ -30,7 +30,7 @@ No additional setup is required.
 
 ## Usage
 
-Import and use the `exitApp` function to get the status bar height.
+Import and use the `exitApp` function.
 
 ```tsx md title="App.tsx"
 import { exitApp } from '@logicwind/react-native-exit-app';
