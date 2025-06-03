@@ -1,0 +1,24 @@
+name: '🚀 release'
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    name: 🚀 release
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📚 checkout
+        uses: actions/checkout@v3
+      - name: 🟢 node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+      - name: 🚀 publish
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          access: public
+          token: ${{secrets.NPM_AUTH_TOKEN}}
