@@ -16,6 +16,14 @@ or using yarn:
 yarn add @logicwind/react-native-exit-app
 ```
 
+### Expo Setup
+
+If you're working with this Expo project, make sure to run:
+
+```sh md title="Terminal"
+npx expo prebuild
+```
+
 ### iOS Setup
 
 After installation, make sure to install CocoaPods:
