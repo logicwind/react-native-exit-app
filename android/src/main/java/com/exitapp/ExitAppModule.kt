@@ -14,7 +14,7 @@ class ExitAppModule(reactContext: ReactApplicationContext) :
 
   @ReactMethod
   fun exitApp() {
-    val activity: Activity? = this.reactApplicationContext.currentActivity
+    val activity: Activity? = reactApplicationContext.currentActivity
     activity?.finishAffinity()
     Runtime.getRuntime().exit(0)
   }
