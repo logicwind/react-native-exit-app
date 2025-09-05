@@ -1,6 +1,6 @@
 {
   "name": "@logicwind/react-native-exit-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Exit / Close / Kill / shutdown your react native app. Does not invoke a crash notification.",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
