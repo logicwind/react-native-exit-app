@@ -34,7 +34,7 @@ cd ios && pod install
 
 ### Android Setup
 
-No additional setup is required.
+No additional setup is required. Compatible with Android Gradle Plugin (AGP) 9, including projects with built-in Kotlin support enabled.
 
 ## Usage
 
