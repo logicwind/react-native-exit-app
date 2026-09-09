@@ -1,3 +1,7 @@
+## 0.2.1
+
+- **Android**: Skip the explicit `kotlin-android` plugin apply when AGP has already registered the `kotlin` extension, fixing builds on AGP 9. ([#9](https://github.com/logicwind/react-native-exit-app/pull/9))
+
 ## 0.2.0
 
 - **Android**: Reference `currentActivity` in `exitApp` method to prevent crashes when exiting the app. ([#5](https://github.com/logicwind/react-native-exit-app/pull/5))
